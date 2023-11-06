@@ -118,4 +118,35 @@ Logical operators are how you make decisions in your code. You have three main o
   console.log(isWeekend || isVacation); //
   ```
 
+
+### 5. String Operators
+
+The plus operator (`+`) is _also_ used to concatenate strings:
+
+```javascript
+let firstName = "John";
+let lastName = "Doe";
+let fullName = firstName + " " + lastName; // equals "John Doe"
+```
+
+
+### Wrap-Up and Practice Task
+
+That's a lot, I know! But these operators are the building blocks for making decisions and calculations in your code. Now for a quick practice task: using CodePen create a simple program that uses different operators to calculate the result of a math problem, compare two values, and concatenate some strings. Here's an example to get you started:
+
+```javascript
+let num1 = 10;
+let num2 = 5;
+let mathResult = num1 * num2;
+
+let areEqual = num1 == num2;
+let joinedWords = "Hello, " + "World!";
+
+console.log("The result is: " + mathResult);
+console.log("Are the numbers equal? " + areEqual);
+console.log(joinedWords);
+```
+
+Play around with these concepts and see what you can come up with. Remember, the more you use them, the more intuitive they'll become. Happy coding!
+
 [Back to the Wiki](https://github.com/nayaba/pw-wiki)
