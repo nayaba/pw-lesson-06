@@ -1,4 +1,4 @@
-![pizza](https://github.com/nayaba/pw-lesson-06/assets/9198401/0ddc0dd3-e790-4458-b566-0a8e57bbdbb4)
+<img src="https://github.com/nayaba/pw-lesson-06/assets/9198401/0ddc0dd3-e790-4458-b566-0a8e57bbdbb4" height="300 px" width="auto" />
 
 Alright, let's roll up our sleeves and get our hands dirty with JavaScript operators. Operators are like the verbs of the language—they get things done. So, whether you're just starting or looking to refresh your memory, let's break it down as if we were learning to cook a new recipe.
 
