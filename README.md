@@ -116,3 +116,6 @@ Logical operators are how you make decisions in your code. You have three main o
   let isVacation = true;
   
   console.log(isWeekend || isVacation); //
+  ```
+
+[Back to the Wiki](https://github.com/nayaba/pw-wiki)
