@@ -116,7 +116,7 @@ let food2 = 'apple';  // Notice the uppercase 'A' and lowercase 'a'
 console.log(food1 !== food2);  // Outputs: true, because the case of the first letters is different
 
 let food3 = 'Apple';
-let food4 = 'Banana';  // Completely different strings
+let food4 = 'Banana';
 
 console.log(food3 !== food4);  // Outputs: true, because the strings are not the same
 ```
