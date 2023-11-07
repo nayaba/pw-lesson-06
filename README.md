@@ -66,25 +66,86 @@ Now, if assignment operators are about giving, arithmetic operators are all abou
 
 Comparison operators are the judgmental part of JavaScript. They compare two values and return a boolean (`true` or `false`):
 
-- **Equal (`==`)** and **Strictly Equal (`===`)**: Is this the same as that?
+- **Comparing Numbers with Strict Equality**
 
-  ```javascript
-  let a = '5';
-  let b = 5;
-  
-  console.log(a == b); // true, because it's 'loose' and only checks value
-  console.log(a === b); // false, because it's 'strict' and checks value and type
-  ```
+When you're dealing with numbers in JavaScript and you want to check for equality, `===` is your go-to operator:
 
-- **Not Equal (`!=`)** and **Strictly Not Equal (`!==`)**: This is the opposite of equal.
+```javascript
+let num1 = 10;
+let num2 = 10;
 
-  ```javascript
-  let c = 10;
-  let d = '10';
-  
-  console.log(c != d); // false, because c and d have the same value
-  console.log(c !== d); // true, because they are of different types
-  ```
+console.log(num1 === num2);  // Outputs: true, because the values and types are the same
+
+let num3 = 10;
+let num4 = 20;
+
+console.log(num3 === num4);  // Outputs: false, because the values are different
+```
+
+And when you want to ensure that two numbers are not the same, `!==` steps in:
+
+```javascript
+let num5 = 15;
+let num6 = 20;
+
+console.log(num5 !== num6);  // Outputs: true, because the numbers are not the same
+```
+
+- **Comparing Strings with Strict Equality**
+
+Comparing strings strictly is similar to comparing numbers—you're checking both the value and the type:
+
+```javascript
+let greeting1 = 'Hello';
+let greeting2 = 'Hello';
+
+console.log(greeting1 === greeting2);  // Outputs: true, because the strings are identical
+
+let greeting3 = 'Hello';
+let greeting4 = 'hello';  // Note the lowercase 'h'
+
+console.log(greeting3 === greeting4);  // Outputs: false, because the strings are not identical (case-sensitive)
+```
+
+For strict non-equality, we use `!==` to determine if two strings are not identical, which includes any differences in characters or case:
+
+```javascript
+let food1 = 'Apple';
+let food2 = 'apple';  // Notice the uppercase 'A' and lowercase 'a'
+
+console.log(food1 !== food2);  // Outputs: true, because the case of the first letters is different
+
+let food3 = 'Apple';
+let food4 = 'Banana';  // Completely different strings
+
+console.log(food3 !== food4);  // Outputs: true, because the strings are not the same
+```
+
+- **Strict Comparisons with Type-Checking**
+
+Strict comparison takes the type of variable into account.
+
+```javascript
+let a = '5';
+let b = 5;
+
+console.log(a === b); // Outputs: false, because STRING '5' is not the same type as NUMBER 5
+```
+
+In this case, `a` is a string and `b` is a number. Even though they look similar, they are different types to JavaScript.
+
+The opposite, strictly not equal `!==`, confirms non-identity:
+
+```javascript
+let c = 10;
+let d = '10';
+
+console.log(c !== d); // Outputs: true, because a NUMBER is not the same type as a STRING
+```
+
+Here `c` and `d` have the same value if you squint, but one's in quotes (a string) and one's not (a number). This means they're not the same in the eyes of JavaScript.
+
+Understanding comparison operators with both numbers and strings, as well as strict type comparisons, is key to writing precise and bug-free conditions in your code.
 
 - **Greater than (`>`)**, **Less than (`<`)**, **Greater than or equal to (`>=`)**, **Less than or equal to (`<=`)**: These are your classic greater and less than signs from math class.
 
