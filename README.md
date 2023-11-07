@@ -189,6 +189,12 @@ The plus operator (`+`) is _also_ used to concatenate strings:
 ```javascript
 let firstName = "John";
 let lastName = "Doe";
+let fullName = firstName + lastName; // equals "JohnDoe"
+
+// let's add a space
+
+let firstName = "John";
+let lastName = "Doe";
 let fullName = firstName + " " + lastName; // equals "John Doe"
 ```
 
