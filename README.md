@@ -178,7 +178,7 @@ Logical operators are how you make decisions in your code. You have three main o
   let isWeekend = false;
   let isVacation = true;
   
-  console.log(isWeekend || isVacation); //
+  console.log(isWeekend || isVacation); // true, because isVacation is true
   ```
 
 
